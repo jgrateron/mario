@@ -99,7 +99,7 @@ public class WholeGame extends GameEngine{
         
         private void LoadImages() {
         
-                System.out.print("loading images" );
+            System.out.println("ini loading images" );
             this.bsLoader.storeImages("Iron", this.getImages("Iron.png" , 4 , 1));
             this.bsLoader.storeImages("QuestionMark", this.getImages("QuestionMark.png"  , 3, 1 ));
             this.bsLoader.storeImages("QuestionMarkGrey", this.getImages("QuestionMarkGrey.png"  , 3, 1 ));
@@ -325,9 +325,8 @@ public class WholeGame extends GameEngine{
             //---- Font
             
             this.bsLoader.storeImages("Font" , this.getImages("Font.png" , 16 ,3));
-            
-            this.bsLoader.storeImage("Info" , ImageUtil.getImage(WholeGame.class.getResource("Info.png" ), 3));
-            
+            this.bsLoader.storeImage("Info" , this.getImage("Info.png"));
+            System.out.println("end loading images" );
             
             
             
